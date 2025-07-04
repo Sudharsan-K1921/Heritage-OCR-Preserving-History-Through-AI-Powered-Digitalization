@@ -26,61 +26,61 @@ Heritage OCR is an AI-powered solution that digitizes and preserves historical t
 
 ## 🧰 Installation (Step-by-step)
 
-1. 📦 Clone the Repository
+## 1. 📦 Clone the Repository
          git clone https://github.com/Sudharsan-K1921/Heritage-OCR-Preserving-History-Through-AI-Powered-Digitalization.git
          cd Heritage-OCR-Preserving-History-Through-AI-Powered-Digitalization
 
-2. 🐍 Set up a Virtual Environment (Optional but Recommended)
+## 2. 🐍 Set up a Virtual Environment (Optional but Recommended)
          python -m venv .venv
-# Activate:
-# On Windows
-        .venv\Scripts\activate
-# On macOS/Linux
-        source .venv/bin/activate
+		 Activate:
+		 On Windows
+		        .venv\Scripts\activate
+		 On macOS/Linux
+		        source .venv/bin/activate
 
-3. 📥 Install Dependencies
+## 3. 📥 Install Dependencies
        pip install -r requirements.txt
        
-4. ⚙️ Install Tesseract OCR
+## 4. ⚙️ Install Tesseract OCR
      Windows: Download from https://github.com/tesseract-ocr/tesseract
      Add Tesseract path to your system environment variables (e.g., C:\Program Files\Tesseract-OCR\tesseract.exe)
-Linux (Ubuntu):
-     sudo apt update
-     sudo apt install tesseract-ocr
-macOS:
-     brew install tesseract
-   
-6. 🖼️ Run the App
-If you're using Streamlit:
-       streamlit run app.py
-   
-If you're using Flask:
-        python app.py
-Replace app.py with the correct filename of your web UI script.
+	Linux (Ubuntu):
+	     sudo apt update
+	     sudo apt install tesseract-ocr
+	macOS:
+	     brew install tesseract
 
-🖼️ Example Workflow
+## 6. 🖼️ Run the App
+		 If you're using Streamlit:
+		       streamlit run app.py
+		   
+		If you're using Flask:
+		        python app.py
+		Replace app.py with the correct filename of your web UI script.
+
+## 🖼️ Example Workflow
     Upload a scanned image of a historical document
     The system preprocesses the image (resize, grayscale, etc.)
     Text is extracted using OCR
     Enhanced text is displayed with download options
 
-📁 Project Structure
-project/
-│
-├── data/                  # Sample input images
-├── output/                # Extracted text files
-├── src/                   # Python scripts
-├── app.py                 # Web app (Streamlit/Flask)
-├── requirements.txt
-├── README.md
-└── .gitignore
+## 📁 Project Structure
+		project/
+		│
+		├── data/ # Sample input images
+		├── output/ # Extracted text files
+		├── src/ # Python scripts
+		├── app.py # Web app (Streamlit/Flask)
+		├── requirements.txt
+		├── README.md
+		└── .gitignore
 
-📚 Dataset Suggestions
+## 📚 Dataset Suggestions
     Google Books
     Project Gutenberg
     Local scanned manuscripts or museum archives
 
-🛠️ Future Improvements
+## 🛠️ Future Improvements
     Multi-language OCR support 
     Handwritten text recognition (HTR)
     Export as searchable PDF
