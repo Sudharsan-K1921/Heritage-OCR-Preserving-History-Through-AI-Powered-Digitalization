@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage OCR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Heritage OCR</h1>
+        <p class="subtitle">Preserving History through AI-Powered Digitalization</p>
+        
+        <div class="upload-section">
+            <label class="custom-file-upload">
+                <input type="file" id="imageInput" accept="image/*">
+                📂 Choose File
+            </label>
+            <span id="fileName">No file chosen</span>
+
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="ta">Tamil</option>
+                <option value="devanagari">Sanskrit</option>
+                <option value="hi">Hindi</option>
+                <option value="te">Telugu</option>
+            </select>
+            
+            <button id="processButton">Process Image</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Uploaded Image:</h2>
+<img id="outputImage" src="#" alt="Uploaded Image" style="display: none; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);">
+
+        
+            <h2>Detected Text:</h2>
+            <pre id="outputText">No text detected yet.</pre>
+            <button id="downloadButton">Download Text ⬇️</button>
+
+        
+           <button id="speakButton" > Speak 🔊</button>
+            <audio id="audioPlayer" controls ></audio>
+        </div>
+        
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
